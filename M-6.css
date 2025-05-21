@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.menu {
+    width: 100px;
+    height: 120px;
+    text-align: center;
+}
+.menu > li {
+    height: 25%;
+    background-color: #d5d5d5;
+    position: relative;
+}
+.submenu {
+    margin-left: 100px;
+    margin-top: -23px;
+    width: 0;
+    overflow: hidden;
+    background-color: #bbbaba;
+    position: absolute;
+}
+.submenu > li {
+    height: 30px;
+}
+.menu > li:hover .submenu {
+    transition: all 0.3s;
+    width: 1288px;
+    background-color: #bbbaba;
+}

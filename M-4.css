@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+.menu {
+    width: 200px;
+    background-color: #b7b7b7;
+}
+.menu > li {
+    text-align: center;
+    line-height: 30px;
+    background-color: #bebebe;
+}
+.menu > li:hover {
+    transition: all 0.3s;
+    background-color: #afafaf;
+}
+.submenu {
+    height: 0;
+    overflow: hidden;
+}
+.submenu > li {
+    line-height: 20px;
+}
+.menu > li:hover .submenu {
+    transition: all 0.3s;
+    height: 80px;
+    background-color: #818181;
+}

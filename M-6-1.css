@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.menu {
+    height: 200px;
+    width: 100px;
+    text-align: center;
+}
+.menu > li {
+    width: 100px;
+    line-height: 50px;
+    background-color: #d0d0d0;
+}
+.submenu {
+    position: absolute;
+    margin-left: 100px;
+    width: 0%;
+    overflow: hidden;
+    background-color: #c1c1c1;
+    margin-top: -50px;
+}
+.submenu > li {
+    line-height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: #9b9b9b;
+    float: left;
+}
+.menu > li:hover {
+    transition: all 0.3s;
+    background-color: #9c9c9c;
+}
+.menu:hover .submenu {
+    transition: all 0.6s;
+    width: 100%;
+}
