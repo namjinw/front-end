@@ -1,0 +1,1 @@
+document.getElementById("test").innerHTML = "이현서로 개명!";

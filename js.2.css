@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#mybox {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0707;
+    display: none;
+}
+#mybox.show {
+    display: block;
+}
