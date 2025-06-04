@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.slider-container {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.slider {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    margin-top: 10px;
+}
+button {
+    position: relative;
+    top: 15px;
+    left: 660px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 36px;
+}

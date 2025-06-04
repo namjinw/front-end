@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bigbox {
+    position: relative;
+    left: 100px;
+    top: 200px;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.box {
+    position: relative;
+    left: 0;
+    transition: all 0.5s;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #cacaca;
+}
+.b1 {
+    position: relative;
+    width: 25px;
+    height: 50px;
+    font-size: 20px;
+    top: 125px;
+    left: 80px;
+}
+.b2 {
+    position: relative;
+    top: 125px;
+    left: 260px;
+    width: 25px;
+    height: 50px;
+    font-size: 20px;
+}

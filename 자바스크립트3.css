@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+li {
+    list-style: none;
+}
+.box {
+    width: 70px;
+    height: 50px;
+    box-shadow: 0px 0px 10px -5px;
+    border-radius: 17px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+.box:hover {
+    background-color: #d2d2d2;
+}
+.menu {
+    position: relative;
+    left: 30px;
+    top: 15px;
+    width: 120px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 7px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.menu.after {
+    top: 30px;
+    display: block;
+    opacity: 1
+}
+.menu > li {
+   line-height: 50px; 
+}
+.menu > li:hover {
+    background-color: #f2f2f2;
+}
+.submenu1 {
+    position: relative;
+    left: 160px;
+    width: 100px;
+    top: -185px;
+    height: 150px;
+    box-shadow: 0px 0px 5px 0px;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 7px;
+    overflow: hidden;
+    opacity: 0;
+}
+.submenu1.show1 {
+    top: -170px;
+    opacity: 1;
+}
+.submenu1 > li {
+    line-height: 38px;
+}
+.submenu1 > li:hover {
+    background-color: #f2f2f2;
+}
+.submenu2 {
+    position: relative;
+    top: -285px;
+    left: 160px;
+    width: 100px;
+    height: 150px;
+    box-shadow: 0px 0px 5px 0px;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 7px;
+    overflow: hidden;
+    opacity: 0;
+}
+.submenu2.show2 {
+    opacity: 1;
+    top: -270px;
+}
+.submenu2 > li {
+    line-height: 38px;
+}
+.submenu2 > li:hover {
+    background-color: #f2f2f2;
+}
+.submenu3 {
+    position: relative;
+    top: -390px;
+    left: 160px;
+    width: 130px;
+    height: 150px;
+    box-shadow: 0px 0px 5px 0px;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 7px;
+    overflow: hidden;
+    opacity: 0;
+}
+.submenu3.show3 {
+    opacity: 1;
+    top: -375px;
+}
+.submenu3 > li {
+    line-height: 38px;
+}
+.submenu3 > li:hover {
+    background-color: #f2f2f2;
+}
+.submenu4 {
+    position: relative;
+    top: -485px;
+    left: 160px;
+    width: 130px;
+    height: 150px;
+    box-shadow: 0px 0px 5px 0px;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 7px;
+    overflow: hidden;
+    opacity: 0;
+}
+.submenu4.show4 {
+    opacity: 1;
+    top: -470px;
+}
+.submenu4 > li {
+    line-height: 38px;
+}
+.submenu4 > li:hover {
+    background-color: #f2f2f2;
+}
