@@ -4,78 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="연습.css">
+    <link rel="stylesheet" href="연습.css" type="text/css">
 </head>
 <body>
-    <div class="side-menu">
-        <div class="barng-name">
-            <h1>NAVER</h1>
-        </div>
-        <ul>
-            <li>계정정보 <img src="user-regular.svg" style="width: 20x; position: relative; top: -3px; left: 5px; height: 25px;" ></li>
-            <li>회원정보 <img src="" alt=""></li>
-            <li>네이버웹툰</li>
-            <li>네이버페이</li>
-            <li>문의</li>
-        </ul>
-    </div>
-    <div class="main">
-        <div class="header">
-            <div class="nav">
-                <form class="search-box" caction="" method="get">
-                    <input class="search-txt" type="text" name="" placeholder="검색어를 입력하세요">
-                    <script src="https://kit.fontawesome.com/ff79b6b479.js" crossorigin="anonymous"></script>
-                    <button class="search-btn" type="submit">
-                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="menubar" style="z-index: 2;">
-                <ul class="menu">
-                    <li>
-                        <img src="circle-user-solid.svg" alt="" width="70px" style="position: relative; top: 15px;left: 30px;">
-                        <ul class="submenu">
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">회원정보</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="envelope-solid.svg" alt="" width="70px" style="position: relative; top: 15px; left: 30px;">
-                        <ul class="submenu">
-                            <li><a href="#">수신함</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="bag-shopping-solid.svg" alt="" width="60px" style="position: relative; top: 15px; left: 35px;">
-                        <ul class="submenu">
-                            <li><a href="#">장바구니</a></li>
-                            <li><a href="#">구매</a></li>
-                            <li><a href="#">주문내역</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="calendar-solid.svg" alt="" width="60px" style="position: relative;top: 15px; left: 35px;">
-                        <ul class="submenu">
-                            <li><a href="">날짜</a></li>
-                            <li><a href="">알림</a></li>
-                            <li><a href="">일기예보</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="information">
-                <div class="icon">
-                    <div class="off">▼</div>
-                    <div class="on">▶</div>
+    <script src="연습.js" defer></script>
+    <header class="main-header">
+        <div class="logo"><h1>로고:닷컴즈온</h1></div>
+        <nav id="header-manu-box">
+            <div class="menu">메인</div>
+            <div class="menu">상품</div>
+            <div class="menu">서비스</div>
+            <div class="menu">프로젝트</div>
+            <div class="menu">문의</div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="content1">
+            <div class="img-box">
+                <div class="img-slider">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
                 </div>
             </div>
+            <button class="button1" onclick="next()">></button>
+            <button class="button2" onclick="prev()"><</button>
         </div>
-        <div class="slider">
-            <div class="imgbox1"><img src="s.avif" alt="" class="s1"></div>
-            <div class="imgbox2"><img src="c.jpg" alt="" class="s2"></div>
+        <div class="content2">
+            <div class="img-box">
+                <div class="img"><img src="https://image2.lotteimall.com/goods/05/59/17/1333175905_1.jpg/dims/resizemc/550x550/optimize" alt=""></div>
+            </div>
         </div>
-        <div class="footer"></div>
-    </div>
+        <div class="content3"></div>
+        <div class="content4"></div>
+        <div class="content5"></div>
+    </main>
 </body>
 </html>
