@@ -1,30 +1,31 @@
-const slider = document.querySelector(".slider");
-const slide = document.querySelectorAll(".slide").length;
-const prev = document.querySelector(".prevbutton")
-const next = document.querySelector(".nextbutton");
-let namder = 0;
+const boxs = document.querySelectorAll(".div-box");
+let observ = new IntersectionObserver((e) => {
+    e.forEach( (entry) => {
+        if(entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    })
+}, {threshold: 0.5})
+boxs.forEach(box => observ.observe(box))
 
-function slidemove() {
-    slider.style.transform = `translateX(-${namder * 525}px)`;
-}
+const nav = document.querySelector(".tap");
+const navgation = document.querySelector(".navgation");
 
-function prevb() {
-    if(namder > 0) {
-        namder--;
-        slidemove();
-        buttonhidden()
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 350) {
+//         nav.style.transform = "translateY(-100%)";
+//     }
+//     else {
+//         nav.style.transform = "translateY(0)";
+//     }
+// })
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 350) {
+        navgation.style.transform = "translateY(-150%)";
     }
-}
-
-function nextb() {
-    if(namder < slide - 5) {
-        namder++;
-        slidemove();
-        buttonhidden()
+    else {
+        navgation.style.transform = "translateY(0)";
     }
-}
-
-function buttonhidden() {
-    prev.style.display = namder === 0 ? 'none' : 'block';
-    next.style.display = namder === slide - 5 ? 'none' : 'block';
-}
+})
