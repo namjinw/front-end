@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-box {
+    width: 420px;
+    height: 490px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px -2px;
+    overflow: hidden;
+}
+.title-box {
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-title-box {
+    position: relative;
+    width: 150px;
+    height: 80px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    --primary-color: #2d2d2d;
+}
+.login-title-box::after, .login-title-box::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+}
+.login-title-box::after {
+    left: -30px;
+    border-top-right-radius: 20px;
+    box-shadow: 17px 0px 0px var(--primary-color);
+}
+.login-title-box::before {
+    right: -30px;
+    border-top-left-radius: 20px;
+    box-shadow: -17px 0px 0px var(--primary-color);
+}
+.login-title-box > h1 {
+    width: 100%;
+    height: 100%;
+}
+.user-input-box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.user-Email, .user-Password {
+    left: 15px;
+    transform: translateY(100%);
+    width: 350px;
+    height: 50px;
+    position: relative;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid rgb(192, 192, 192);
+    transition: all 0.4s;
+    margin: 25px 0px;
+}
+.user-Email:focus, .user-Password:focus {
+    border: 2px solid rgb(56, 56, 56);
+}
+.label {
+    position: absolute;
+    transform: translateY(-50%);
+    color: #d6d6d6;
+    background-color: #fff;
+    left: 50px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.4s;
+    border: 0;
+    padding: 0px 10px;
+}
+.user-Email:focus ~ .label {
+    transform: translateY(-180%);
+    color: #2d2d2d;
+    font-size: 15px;
+    padding: 0px 0px;
+}
+.user-Password:focus ~ .label {
+    transform: translateY(-180%);
+    color: #2d2d2d;
+    font-size: 15px;
+    padding: 0px 0px;
+}
+#icon {
+    position: absolute;
+    transform: translateY(-40%);
+    right: 35px;
+}
+.submit-box {
+    width: 100%;
+    height: 186px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.password-search-box {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+.pass-search-p {
+    position: absolute;
+    right: 20px;
+    color: #3f3f3f;
+    cursor: pointer;
+}
+.pass-search-p:hover {
+    text-decoration: underline;
+}
+.login-submit {
+    position: relative;
+    width: 250px;
+    height: 70px;
+    background-color: #202020;
+    font-size: 25px;
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    top: 10px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-submit p, .login-submit i {
+    margin: 0px 8px;
+}
+.change {
+    position: relative;
+    left: 100px;
+    top: 30px;
+    display: flex;
+}
+.Register {
+    font-weight: 500;
+    cursor: pointer;
+}
+.Register:hover {
+    text-decoration: underline;
+}

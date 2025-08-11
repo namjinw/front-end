@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="로그인창.css">
+    <script src="https://kit.fontawesome.com/ff79b6b479.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="로그인창.js" defer></script>
+    <div class="login-box">
+        <div class="title-box">
+            <div class="login-title-box"><h1>Login</h1></div>
+        </div>
+        <div class="user-input-box">
+            <form action="loginAction" method="post">
+                <div class="input-box">
+                    <input type="text" class="user-Email" name="userEmail" id="user-Emails">
+                    <label for="user-Emails" class="label">Email</label>
+                    <i class="fa-solid fa-user" style="color: #000000;" id="icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="user-Password" name="userPassword" id="user-Passwords">
+                    <label for="user-Passwords" class="label">Password</label>
+                    <i class="fa-solid fa-lock" style="color: #000000;" id="icon"></i>
+                </div>
+            </form>
+        </div>
+        <div class="submit-box">
+            <div class="password-search-box">
+                <p class="pass-search-p">Forgot password?</p>
+            </div>
+            <button class="login-submit">
+                <p>sign up</p>
+                <i class="fa-solid fa-door-open" style="color: #ffffff;"></i>
+            </button>
+            <div class="change">
+                <p>Don't have an account?</p>&nbsp;<p class="Register">Register</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
