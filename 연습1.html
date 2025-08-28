@@ -8,38 +8,20 @@
 </head>
 <body>
     <script src="연습1.js" defer></script>
-    <div class="wrap">
-        <header>
-            <div class="tap">
-                <div class="benner">
-                    <div class="benner-text-box">
-                        <p>login</p>
-                        <p>join</p>
-                    </div>
-                </div>
-                <nav class="navgation">
-                    <div class="logo">
-                        <img src="https://img.icons8.com/color/512/burger-king-logo.png" alt="">
-                    </div>
-                    <nav class="nav-menu-box">
-                        <ul class="nav-menu">
-                            <li>소개</li>
-                            <li>서비스</li>
-                            <li>주문</li>
-                            <li>메뉴</li>
-                        </ul>
-                    </nav>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="slider">
-                <div class="div-box"></div>
-                <div class="div-box"></div>
-                <div class="div-box"></div>
-            </div>
-        </main>
-        <footer></footer>
+    <div class="product-list"> <!-- 결제 담는 박스-->
+    <h3>상품 목록</h3>
+        <div class="product" draggable="true" data-name="노트북" data-price="1200000">💻 노트북 (₩1,200,000)</div>
+        <div class="product" draggable="true" data-name="헤드폰" data-price="150000">🎧 헤드폰 (₩150,000)</div>
+        <div class="product" draggable="true" data-name="마우스" data-price="30000">🖱 마우스 (₩30,000)</div> 
+    </div> <!-- draggable <= 마우스 드래그 허용, data- ~ <= 데이터값 정의 (이름이나 값) -->
+
+    <!-- 결제바 영역 -->
+    <div class="cart-bar" id="cart"> <!-- 카트 박스 영역 -->
+        <h3>결제 바</h3>
+        <p>상품을 여기에 드롭하세요</p>
+        <div id="cart-items"></div> <!-- 상품이 추가되는 곳-->
+        <hr> <!-- 선 긋기 -->
+        <p><b>총 결제금액:</b> <span id="total">0</span> 원</p> <!-- p <= 문단하나, b <= 굵은 글씨, span <= 값 -->
     </div>
 </body>
 </html>
