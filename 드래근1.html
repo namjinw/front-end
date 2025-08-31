@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="드래근1.css">
+</head>
+<body>
+    <script src="드래근1.js" defer></script>
+    <div class="products">
+        <h1 class="products-h1">상품 목록</h1>
+        <div class="product" draggable="true" data-name="다이제온 슈퍼1" data-price="1200000">
+            <img src="https://i.namu.wiki/i/kUGqKDay3xxr0fnP08hvRGkkFheP4nvcZ8yRHdV64XHfUFUS7L_xMpdW4Ae0Tz1bjV6q3YQJW17mZPbzpPDMug.webp" alt=""><br>
+            <div class="product-imformation">
+                <h6>디제이온 슈퍼1</h6><br>
+                <p class="product-p" style="color: gray;">1,200,000</p>
+                <h3 style="color: orange;">※주문시 바로 도착</h3>
+                <button onclick="addproduct()">상품추가</button>
+            </div>
+        </div>
+        <div class="product" draggable="true" data-name="다이제온 슈퍼2" data-price="1200000">
+            <img src="https://i.namu.wiki/i/kUGqKDay3xxr0fnP08hvRGkkFheP4nvcZ8yRHdV64XHfUFUS7L_xMpdW4Ae0Tz1bjV6q3YQJW17mZPbzpPDMug.webp" alt=""><br>
+            <div class="product-imformation">
+                <h6>디제이온 슈퍼2</h6><br>
+                <p class="product-p" style="color: gray;">1,200,000</p>
+                <h3 style="color: orange;">※주문시 바로 도착</h3>
+                <button onclick="addproduct()">상품추가</button>
+            </div>
+        </div>
+        <div class="product" draggable="true" data-name="다이제온 슈퍼3" data-price="1200000">
+            <img src="https://i.namu.wiki/i/kUGqKDay3xxr0fnP08hvRGkkFheP4nvcZ8yRHdV64XHfUFUS7L_xMpdW4Ae0Tz1bjV6q3YQJW17mZPbzpPDMug.webp" alt=""><br>
+            <div class="product-imformation">
+                <h6>디제이온 슈퍼3</h6><br>
+                <p class="product-p" style="color: gray;">1,200,000</p>
+                <h3 style="color: orange;">※주문시 바로 도착</h3>
+                <button onclick="addproduct()">상품추가</button>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="cart-box">
+        <h1>상품결제</h1>
+        <div class="cart-items"></div>
+        <div class="total-box">
+            <div class="p">합계<span class="total">0</span>원</div>
+        </div>
+    </div>
+</body>
+</html>
