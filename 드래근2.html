@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="드래근2.css">
+    <script src="https://kit.fontawesome.com/ff79b6b479.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="드래근2.js" defer></script>
+    <div class="products">
+        <div class="product" data-name="컴퓨터" data-price="1200000" draggable="true">
+            <img src="https://i.namu.wiki/i/kUGqKDay3xxr0fnP08hvRGkkFheP4nvcZ8yRHdV64XHfUFUS7L_xMpdW4Ae0Tz1bjV6q3YQJW17mZPbzpPDMug.webp" alt="">
+            <h1>컴퓨터</h1>
+            <p>1200000</p>
+            <button onclick="addproduct('컴퓨터','1200000', 'https://i.namu.wiki/i/kUGqKDay3xxr0fnP08hvRGkkFheP4nvcZ8yRHdV64XHfUFUS7L_xMpdW4Ae0Tz1bjV6q3YQJW17mZPbzpPDMug.webp')">장바구니추가</button>
+        </div>
+    </div>
+    <div class="side-bar">
+        <input type="checkbox" id="cart-open" hidden>
+        <label class="cart-icon" for="cart-open">
+            <i class="fa-solid fa-cart-plus" style="color: #ffffff;" id="icon"></i>
+        </label>
+        <div class="cart-open-boxmenu">
+            <label class="cart-button" for="cart-open">X</label>
+            <h1>장바구니 상품</h1>
+            <div class="cart-items">
+
+            </div>
+            <div class="total-box">
+                <p>합계:<span class="">0</span>원</p>
+            </div>
+        </div>
+        <div class="drag-hover-box">
+            <div class="drag-hover-line">상품 드래그</div>
+        </div>
+    </div>
+</body>
+</html>
